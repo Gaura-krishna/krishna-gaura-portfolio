@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Portfolio</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+      integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+  <!-- Locomotive Scroll CDN -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.3/locomotive-scroll.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.3/locomotive-scroll.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+
+<body>
+  <!-- Main Content Wrapper for Locomotive Scroll -->
+  <!-- <div class="smooth-scroll" id="main-container"> -->
+  <!-- Hero Section -->
+  <section id="hero" class="py-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="hero-content col-md-6 col-lg-6">
+          <h1 class="hero-title">
+            Hi,<strong>I'm Krishna Gaura</strong>
+          </h1>
+          <br />
+          <!-- <span id="scramble"></span> -->
+
+          <p class="hero-subtitle">
+            A Passionate Front-End Developer specialized in React.js.
+          </p>
+        </div>
+        <div class="hero-image col-md-6 col-lg-6">
+          <div class="image-wrapper">
+            <img src="./images/man-sits-desk-with-laptop-plant-background_1013341-201141-transformed.avif"
+              class="img-fluid" alt="Profile Image" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="text-center about scroll-item">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="about-image col-md-6 col-lg-6">
+          <div class="about-image-wrapper">
+            <img src="./images/1725036388314-removebg-preview.png" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="about-content col-md-6 col-lg-6">
+
+          <div class="header-container">
+            <h2 class="header text-left">Who I Am</h2>
+          </div>
+          <p class="text-left">
+            I’m Krishna Gaura, a dedicated Front-End Developer based in Hyderabad, India, with a passion for building
+            intuitive and user-friendly web experiences. Over the past year, I’ve developed dynamic web applications
+            using modern web technologies like React, JavaScript, HTML5, and CSS3, with a particular focus on responsive
+            design and a seamless user experience.
+            <br>
+          </p>
+          <p class="text-left"> After completing my Bachelor's degree in Computer Science from Osmania University, I
+            dove into the tech world by honing my skills in Front-End development, where I’ve worked on a variety of
+            projects ranging from eCommerce platforms to educational solutions. I love building clean, reusable code
+            that aligns with design and user expectations.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="myjourney" >
+    <div class="container">
+      <div class="row align-items-center">
+      
+        <div class="about-content col-md-6 col-lg-6">
+
+          <div class="header-container">
+            <h2 class="header text-left">My Journey</h2>
+          </div>
+          <p class="text-left">
+            My journey into software development started with a fascination for technology and problem-solving. During
+            my academic years at Osmania University, I explored different areas of development, but it was front-end
+            development that truly captured my interest. With a natural flair for designing user-friendly interfaces, I
+            took a deep dive into learning JavaScript and React, the technologies I love working with today.
+
+            <br>
+          </p>
+          <p class="text-left">Since then, I’ve worked with Abilio IT Solutions on multiple exciting projects. Each
+            experience has helped me grow, both technically and professionally, by tackling challenges, implementing
+            clean design principles, and collaborating with cross-functional teams.
+
+          </p>
+        </div>
+
+        <div class="myjourney-image col-md-6 col-lg-6">
+          <div class="myjourney-image-wrapper ">
+            <img src="./images/technologiest.webp" class="img-fluid " alt="Profile Image" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Section -->
+  <!-- <div>
+    <section id="career" class="scroll-item">
+      <div class="container">
+        <div class="career-timeline d-flex justify-content-center">
+          <div class="career-item mx-3">
+            Bachelor's Degree in Computer Science
+          </div>
+          <div class="career-item mx-3">
+            Frontend Developer at Abilio IT Solutions
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div> -->
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="scroll-item">
+    <div class="container">
+      <div class="header-container">
+        <h1 class="header text-left">What skills I know?</h1>
+
+      </div>
+      <div class="row">
+        <div class="skills-column col-md-4">
+          <h3>I Know</h3>
+          <ul class="list-unstyled">
+            
+            <i class="fa-brands fa-html5"></i>
+            <li>HTML <i class="fa-brands fa-html5"></i></li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>C/C++</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills-column col-md-4">
+          <h3>Real-time Worked On</h3>
+          <ul class="list-unstyled">
+            <li>HTML <i class="fa-brands fa-html5"></i></li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>MySql</li>
+            <!-- Add more project skills -->
+            </li>
+        </div>
+        <div class="skills-column col-md-4">
+          <h3>Currently I'm Learning</h3>
+          <ul class="list-unstyled">
+            <li>TypeScript</li>
+            <li>Angular</li>
+            <!-- Add more learning skills -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- new section -->
+    <div class="container">
+      <div class="header-container">
+        <h1 class="header text-left">What skills I know?</h1>
+
+      </div>
+      <div class="row">
+        <div class="skills-column col-md-4">
+          <h3>Frontend Development:</h3>
+          <ul class="list-unstyled">
+       
+            <li>HTML </i></li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+          </ul>
+        </div>
+        <div class="skills-column col-md-4">
+          <h3>Backend Familiarity:</h3>
+          <ul class="list-unstyled">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>MySql</li>
+            <!-- Add more project skills -->
+            </li>
+        </div>
+        <div class="skills-column col-md-4">
+          <h3>Version Control:</h3>
+          <ul class="list-unstyled">
+            <li>Git</li>
+            <li>GitHub</li>
+            <!-- Add more learning skills -->
+          </ul>
+        </div>
+        <div class="skills-column col-md-4">
+          <h3>UI/UX Tools:</h3>
+          <ul class="list-unstyled">
+            <li>Figma</li>
+            <li>Material-UI</li>
+            <li>Bootstrap</li>
+            <!-- Add more learning skills -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- </div> -->
+  <!-- Project Section -->
+  <section style="height: 100vh">
+    <div class="container">
+      <h2 class="text-center my-5">Projects</h2>
+      <!-- Add project details here -->
+      <div class="list ">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="card-footer bg-transparent">
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <!-- Add contact form or details here -->
+    </div>
+  </section>
+
+  <!-- Custom JS -->
+  <script src="/script.js"></script>
+</body>
+
+</html>
